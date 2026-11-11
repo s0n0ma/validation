@@ -83,13 +83,20 @@ set selectedcolor bold,black,yellow # Цвет выделенного текст
 # Без include - nano просто не знает о существовании этих правил.
 # Загружаются только указанные языки, меньше потребление памяти.
 # Загружаем правила для языков, с которыми ты чаще всего работаешь
-# include "/usr/share/nano/bash.nanorc"
-# include "/usr/share/nano/sh.nanorc"
-# include "/usr/share/nano/python.nanorc"
-# include "/usr/share/nano/html.nanorc"
-# include "/usr/share/nano/json.nanorc"
-# include "/usr/share/nano/yaml.nanorc"
-# include "/usr/share/nano/markdown.nanorc"
+include "/usr/share/nano/sh.nanorc"
+include "/usr/share/nano/awk.nanorc"
+include "/usr/share/nano/python.nanorc"
+include "/usr/share/nano/html.nanorc"
+include "/usr/share/nano/json.nanorc"
+include "/usr/share/nano/yaml.nanorc"
+include "/usr/share/nano/markdown.nanorc"
+include "/usr/share/nano/autoconf.nanorc"
+include "/usr/share/nano/changelog.nanorc"
+include "/usr/share/nano/c.nanorc"
+include "/usr/share/nano/cmake.nanorc"
+include "/usr/share/nano/default.nanorc"
+include "/usr/share/nano/xml.nanorc"
+include "/usr/share/nano/php.nanorc"
 
 # Если в твоем дистрибутиве есть папка extra, можно подключить всё сразу:
 # include "/usr/share/nano/extra/*.nanorc"
@@ -115,6 +122,7 @@ set selectedcolor bold,black,yellow # Цвет выделенного текст
 # Ctrl ] - Найти парную скобку (To Bracket)
 # Alt 3  - Закомментировать/раскомментировать строку (Mark/Unmark string as comment)
 
-# Ctrl C - Отмена (Cancel)
+# Ctrl C - Показать позицию курсора и статистику файла
+# Esc или Ctrl G - Отмена действия / Выход из режима поиска
 # Ctrl T - Выполнить (Execute)
 # Ctrl J - Выровнить (Justify)
